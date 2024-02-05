@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import TituloSecundario from "./components/TituloSecundario";
-
+import Contador from "./components/Contador";
 function App() {
   // aqui agregamos la logica del componente
   const anioActual = new Date();
@@ -19,6 +19,7 @@ function App() {
       </p>
       <TituloSecundario comision='c75i' anioActual={anioActual.getFullYear()}></TituloSecundario>
       {/* <TituloSecundario/> */}
+      <Contador></Contador>
     </section>
   );
 }
