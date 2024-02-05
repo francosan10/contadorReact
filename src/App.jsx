@@ -3,6 +3,8 @@ import TituloSecundario from "./components/TituloSecundario";
 
 function App() {
   // aqui agregamos la logica del componente
+  const anioActual = new Date();
+
   return (
     // aqui puedo agregar un poco mas de logica
     <section className="container my-4">
@@ -15,7 +17,7 @@ function App() {
         laudantium nisi. Ea architecto rem sint recusandae inventore eum
         perferendis ut.
       </p>
-      <TituloSecundario></TituloSecundario>
+      <TituloSecundario comision='c75i' anioActual={anioActual.getFullYear()}></TituloSecundario>
       {/* <TituloSecundario/> */}
     </section>
   );
